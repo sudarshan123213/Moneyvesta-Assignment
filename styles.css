@@ -1,0 +1,147 @@
+
+/* Body & Container */
+body {
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  background: #f4f6f8; /* soft professional background */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Section Styling */
+section {
+  background: linear-gradient(145deg, #ffffff, #f0f3f8); /* subtle gradient */
+  padding: 50px 25px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08); /* soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(78, 65, 65, 0.12);
+}
+
+/* Section Headings */
+h2 {
+  font-size: 2rem;
+  color: #1b1b1b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* WHO THIS IS FOR - Grid */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Card Styling */
+.who-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.who-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+  background: #f7f9fc;
+}
+
+/* Icon Styling */
+.who-item .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #0052cc; /* professional blue color */
+}
+
+/* Card Title */
+.who-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #1b1b1b;
+}
+
+/* Card Description */
+.who-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Portfolio Management Steps */
+.management-steps li {
+  background: #ffffff;
+  margin-bottom: 18px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.management-steps li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.10);
+}
+
+.management-steps li strong {
+  color: #0052cc;
+  font-size: 1.05rem;
+}
+
+/* CTA Button */
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #0052cc, #0073ff);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(90deg, #003d99, #0052cc);
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .who-grid{
+    gap: 15px;
+  }
+
+  .who-item{
+    padding: 20px 15px;
+  }
+
+  .management-steps li{
+    padding: 18px 15px;
+  }
+
+  .btn{
+    padding: 12px 24px;
+  }
+}
